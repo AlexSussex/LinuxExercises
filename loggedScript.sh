@@ -2,10 +2,8 @@
 
 echo "Would you like to delete the current log file? Y/N"
 read userInput
-echo ${userInput}
-if [ ${userInput}==Y ]
+if [ ${userInput} == "Y" ]
 then
-	echo ${userInput}
 	cat /dev/null > logfile.r
 	echo "The previous logs have been removed"
 else
